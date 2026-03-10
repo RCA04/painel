@@ -65,7 +65,7 @@ function Header() {
                             />
                         }
                         label={
-                            <Typography sx={{ color: 'white', fontSize: '0.875rem' }}>
+                            <Typography sx={{ color: 'white', fontSize: '0.875rem', marginRight: '15px', marginLeft: '-5px' }}>
                                 {theme === 'dark' ? <DarkModeIcon/> : <LightModeIcon/>}
                             </Typography>
                         }

@@ -200,10 +200,10 @@ export function UserListPage() {
   ];
 
   return (
-    <Box className="min-h-screen bg-gray-100 p-8">
+    <Box className="min-h-screen p-8" sx={{ bgcolor: 'background.default' }}>
       <Paper className="max-w-4xl mx-auto p-6">
         <div className="flex justify-between items-center mb-6">
-          <h1 className="text-2xl font-bold text-gray-800">
+          <h1 className="text-2xl font-bold">
             Usuários
           </h1>
           <Button
@@ -250,7 +250,7 @@ export function UserListPage() {
         )}
 
         {!loading && users.length === 0 && (
-          <p className="text-center text-gray-500 py-8">
+          <p className="text-center py-8">
             Nenhum usuário cadastrado.
           </p>
         )}

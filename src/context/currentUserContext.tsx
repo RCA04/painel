@@ -16,7 +16,9 @@ interface CurrentUserContextType {
     setCurrentUser: (data: CurrentUser | null) => void;
     loading: boolean;
     login: () => void;
-    logoff: () => void
+    logoff: () => void;
+    theme: 'light' | 'dark';
+    toggleTheme: () => void;
 }
 
 const CurrentUserContext = createContext<CurrentUserContextType | undefined>(undefined);
@@ -28,6 +30,7 @@ interface CurrentUserProps {
 export function CurrentUserProvider({ children }: CurrentUserProps) {
     const [currentUser, setCurrentUser] = useState<CurrentUser | null>(null);
     const [loading, setLoading] = useState(false)
+    const [theme, setTheme] = useState<'light' | 'dark'>('dark');
 
     const login = () => {
         setLoading(true)
@@ -56,12 +59,18 @@ export function CurrentUserProvider({ children }: CurrentUserProps) {
 
     }
 
+    const toggleTheme = () => {
+        setTheme((prev) => (prev === 'light' ? 'dark' : 'light'));
+    };
+
     const value: CurrentUserContextType = {
         currentUser,
         setCurrentUser,
         loading,
         login,
         logoff,
+        theme,
+        toggleTheme,
     }
 
     return (

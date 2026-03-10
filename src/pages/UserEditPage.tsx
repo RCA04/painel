@@ -86,16 +86,16 @@ export function UserEditPage() {
 
   if (loadingUser) {
     return (
-      <Box className="min-h-screen bg-gray-100 p-8 flex items-center justify-center">
+      <Box className="min-h-screen p-8 flex items-center justify-center" sx={{ bgcolor: 'background.default' }}>
         <CircularProgress />
       </Box>
     );
   }
 
   return (
-    <Box className="min-h-screen bg-gray-100 p-8">
+    <Box className="min-h-screen p-8" sx={{ bgcolor: 'background.default' }}>
       <Paper className="max-w-2xl mx-auto p-6">
-        <h1 className="text-2xl font-bold text-gray-800 mb-6">
+        <h1 className="text-2xl font-bold mb-6">
           Editar usuário
         </h1>
 

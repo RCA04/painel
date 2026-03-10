@@ -1,6 +1,5 @@
-import React, { createContext, useContext, useState, ReactNode, useEffect } from "react";
+import React, { createContext, useContext, useState, ReactNode } from "react";
 import { usersApi } from "../api/users";
-import { Api } from "@mui/icons-material";
 
 export interface CurrentUser {
     id: string;
@@ -79,3 +78,4 @@ export function useCurrentUser(): CurrentUserContextType {
     }
     return context;
 }
+

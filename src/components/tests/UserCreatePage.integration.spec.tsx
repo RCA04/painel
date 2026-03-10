@@ -29,7 +29,7 @@ describe('UserCreatePage (integração simples)', () => {
       name: 'Novo Usuário',
       email: 'novo@example.com',
       active: true,
-    } as any);
+    });
 
     renderCreatePage();
 

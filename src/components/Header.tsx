@@ -10,6 +10,10 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
+import Switch from '@mui/material/Switch';
+import LightModeIcon from '@mui/icons-material/LightMode';
+import DarkModeIcon from '@mui/icons-material/DarkMode';
+import FormControlLabel from '@mui/material/FormControlLabel';
 
 function Header() {
     const nav = useNavigate();
@@ -18,7 +22,7 @@ function Header() {
         nav('/')
     }
 
-    const { currentUser, loading, login, logoff } = useCurrentUser();
+    const { currentUser, loading, login, logoff, theme, toggleTheme } = useCurrentUser();
 
     return (
         <AppBar position="static">
@@ -50,6 +54,22 @@ function Header() {
                             </Typography>
                         </Button>
                     </Box>
+
+                    <FormControlLabel
+                        control={
+                            <Switch
+                                checked={theme === 'dark'}
+                                onChange={toggleTheme}
+                                color="default"
+                                inputProps={{ 'aria-label': 'alternar tema claro/escuro' }}
+                            />
+                        }
+                        label={
+                            <Typography sx={{ color: 'white', fontSize: '0.875rem', marginRight: '15px', marginLeft: '-5px' }}>
+                                {theme === 'dark' ? <DarkModeIcon/> : <LightModeIcon/>}
+                            </Typography>
+                        }
+                    />
 
                     {!currentUser && (
                         <Button loading={loading} loadingPosition='start' onClick={login} variant='contained' color='warning' size='small'>

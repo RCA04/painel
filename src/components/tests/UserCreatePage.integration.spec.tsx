@@ -18,7 +18,7 @@ function renderCreatePage() {
   );
 }
 
-describe('UserCreatePage (integração simples)', () => {
+describe('UserCreatePage', () => {
   beforeEach(() => {
     jest.clearAllMocks();
   });

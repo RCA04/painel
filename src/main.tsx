@@ -25,7 +25,6 @@ if (root) {
       <React.StrictMode>
         <CurrentUserProvider>
           <BrowserRouter>
-            <Header />
             <App />
           </BrowserRouter>
         </CurrentUserProvider>

@@ -51,11 +51,9 @@ export function UserCreatePage() {
   };
 
   return (
-    <Box className="min-h-screen bg-gray-100 p-8">
+    <Box className="min-h-screen p-8" sx={{ bgcolor: 'background.default' }}>
       <Paper className="max-w-2xl mx-auto p-6">
-        <h1 className="text-2xl font-bold text-gray-800 mb-6">
-          Novo usuário
-        </h1>
+        <h1 className="text-2xl font-bold mb-6">Novo usuário</h1>
 
         <form onSubmit={handleSubmit} className="flex flex-col gap-4">
           <TextField

@@ -27,7 +27,7 @@ export function UserCreatePage() {
 
     setLoading(true);
     usersApi
-      .create({ name: name.trim(), email: email.trim() })
+      .create({ name: name.trim(), email: email.trim(), active: true })
       .then(() => {
         setSnackbar({
           open: true,

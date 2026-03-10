@@ -57,6 +57,12 @@ Este projeto é um **gestor de usuários** (painel administrativo) que permite:
 
 ---
 
+## Demo
+
+https://painel-xi-virid.vercel.app/
+
+---
+
 ## 3. Como instalar Node 20 e npm
 
 ### 3.1. Verificar se já existe Node/NPM (Linux e Windows)

@@ -16,7 +16,7 @@ export const handlers = [
     return HttpResponse.json(getUsers());
   }),
 
-    http.get(`${API_BASE}/me`,({params}) => {
+    http.get(`${API_BASE}/me`,() => {
     const  currentUser = getCurrentUser();
     if(!currentUser){
       return HttpResponse.json(

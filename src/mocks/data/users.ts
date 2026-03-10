@@ -108,7 +108,7 @@ let users: User[] = [
   },
 ];
 
-let currentUser: CurrentUser = {
+const currentUser: CurrentUser = {
   id:'1',
   name: 'Adalberto Gomes',
   email: 'Adalberto123@email.com',

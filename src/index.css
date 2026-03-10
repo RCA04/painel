@@ -1,3 +1,4 @@
+/* eslint css/no-invalid-at-rules: 0 */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

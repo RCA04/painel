@@ -16,7 +16,6 @@ import EditIcon from '@mui/icons-material/Edit';
 import DeleteIcon from '@mui/icons-material/Delete';
 import { usersApi, User } from '../api/users';
 import { DeleteConfirmDialog } from '../components/DeleteConfirmDialog';
-import { useParams } from 'react-router-dom';
 
 type UserToDelete = {
   id: string;

@@ -8,7 +8,8 @@
     "start": "vite",
     "build": "tsc -b && vite build",
     "preview": "vite preview",
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint ."
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
@@ -42,6 +43,14 @@
     "ts-jest": "^29.4.6",
     "ts-node": "^10.9.2",
     "typescript": "^5.7.2",
-    "vite": "^6.0.3"
+    "vite": "^6.0.3",
+    "eslint": "^9.39.4",
+    "@eslint/js": "^9.17.0",
+    "globals": "^15.14.0",
+    "typescript-eslint": "^8.19.1",
+    "eslint-plugin-react": "^7.37.5",
+    "@eslint/json": "^0.6.0",
+    "@eslint/css": "^0.7.0",
+    "jiti": "^2.4.2"
   }
 }
